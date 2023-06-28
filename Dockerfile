@@ -1,8 +1,6 @@
-FROM ubuntu:16.04
+FROM ubuntu:23.10
 
-RUN apt-get update && apt-get install -y python python-pip python-dev build-essential
-
-RUN sudo pip install --upgrade pip
+RUN apt-get update && apt-get install -y python python-pip
 
 RUN sudo pip install flask
 
