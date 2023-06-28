@@ -6,6 +6,6 @@ RUN pip3 install --upgrade pip
 
 RUN apt-get install -y python3-flask
 
-COPY app.py /opt/
+COPY etc/app.py /opt/
 
 ENTRYPOINT FLASK_APP=/opt/app.py flask run --host+0.0.0.0 --port=8080
