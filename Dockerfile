@@ -1,10 +1,10 @@
 FROM ubuntu:16.04
 
-RUN apt-get update && apt-get install -y python python-pip
+RUN apt-get update && apt-get install -y python python-pip python-dev build-essential
 
-RUN pip install --upgrade pip
+RUN sudo pip install --upgrade pip
 
-RUN pip install flask
+RUN sudo pip install flask
 
 COPY app.py /opt/
 
